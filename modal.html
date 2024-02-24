@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+    <style>
+        #msg {
+            color: black;
+        }
+
+        #great {
+            color: red;
+        }
+
+        #signoutbutton:hover {
+            background-color: green;
+        }
+
+        #updateImageButton:hover {
+            background-color: aqua;
+        }
+
+        #profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #profile img {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        #profile-image {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 20px;
+            margin-bottom: 20px; /* Add margin for spacing */
+        }
+
+        #details {
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+<header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg">
+        <!-- ... (Your existing navigation code) ... -->
+    </nav>
+    <!-- ... (Your existing header content) ... -->
+</header>
+
+<section id="profile">
+    <div id="profile-image">
+        <img src="" alt="Profile Image">
+    </div>
+
+    <div id="details">
+        <label id="msg"></label>
+        <label id="great"></label>
+
+        <input type="file" id="imageInput" accept="image/*">
+        <a class="main-btn" id="updateImageButton">Update</a>
+    </div>
+</section>
+
+<script type="module">
+    // ... (Your existing script code) ...
+</script>
+</body>
+</html>
